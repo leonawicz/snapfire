@@ -1,0 +1,39 @@
+Package: snapfire
+Version: 0.0.0.9000
+Title: API to SNAP Wildfire Data Collections
+Description: Provides access to curated collections of public wildfire data sets
+    offered by Scenarios Network for Alaska and Arctic Planning (SNAP) at the University of Alaska Fairbanks.
+    'snapfire' interfaces with SNAP's Amazon Web Services cloud storage to retrieve specific fire data.
+    Available data includes historical observational fire data and historical and projected climate model-driven fire simulation outputs.
+    Available fire variables include fire frequency, fire size and total burn area.
+    Auxiliary variables include modeled vegetation cover area and stand age, which are also part of SNAP fire simulation outputs.
+    Simulations driven by climate model inputs are done using SNAP's ALFRESCO wildfire and landscape transition model.
+    Spatial coverage includes politically and ecologically defined aerial units as well as communities and other 
+    point locations of interest across Alaska and western Canada.
+    Temporal resolutions include annual statistics and their decadal averages.
+Authors@R: c(person("Matthew", "Leonawicz", email = "mfleonawicz@alaska.edu", role = c("aut", "cre")),
+    person("Scenarios Network for Alaska and Arctic Planning", role = c("cph", "fnd"))
+    )
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/leonawicz/snapfire
+BugReports: https://github.com/leonawicz/snapfire/issues
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    covr
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: 
+    magrittr,
+    dplyr,
+    tibble,
+    snaplocs,
+    snapclim
+Remotes:
+    leonawicz/snaplocs,
+    leonawicz/snapclim
