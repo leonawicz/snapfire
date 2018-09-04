@@ -17,6 +17,10 @@ knitr::opts_chunk$set(
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/leonawicz/snapfire?branch=master&svg=true)](https://ci.appveyor.com/project/leonawicz/snapfire)
 [![Coverage Status](https://img.shields.io/codecov/c/github/leonawicz/snapfire/master.svg)](https://codecov.io/github/leonawicz/snapfire?branch=master)
 
+## SNAPverse R package ecosystem development frozen.
+
+*Development of the SNAPverse R package ecosystem has been frozen indefinitely. This project was never directly funded. I began it out of personal interest, but no longer work for SNAP. It will remain archived here for historical reference.*
+
 The `snapfire` package provides access to curated collections of public wildfire data sets 
 offered by Scenarios Network for Alaska and Arctic Planning (SNAP) at the University of Alaska Fairbanks.
 `snapfire` interfaces with SNAP's Amazon Web Services cloud storage to retrieve specific fire data.
